@@ -32,6 +32,9 @@ summary.lm(simp)
 The adjusted r-square that is the largest is the best. The neck size of adjusted r-square is about 0.7476
 
 
+## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
+
 ```{r}
 simp <- lm(LENGTH~HEADLEN,data=bears)
 plot(LENGTH~HEADLEN,data=bears)
@@ -78,8 +81,10 @@ summary.lm(simp)
 
 The adjusted r-square for weight is 0.7423.
 
+# Conclusion
+To restate the question we need to compute regression models finding one regression model that does the best job in predicting the bear length and its corresponded to the bear neck size, age, hand, with and head length. In Conclusion based on the data we gathered the head length (0.8483) is the best because it have the largest number. The second best is the Chest (0.7869). The third is the neck which is (0.7476). Continuity, the weight (0.7423) next is head weight (0.5321), lastly the age (0.5073).
 
-## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
 
 
 
